@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aspect Ratio Images</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="container" style="--width: 600px">
+  <div class="intro">
+    <h1>Aspect Ratio Images</h1>
+    <p>Combining the padding "hack" with css variables, we can make a wrapper for any image, to display at a certain
+      size. All with CSS, no javascript involved.</p>
+    <p>To make as reusable as possible, we're passing through through the required aspect ratio inline eg. <code>style="--aspect-ratio:
+      16/9"</code> which sets the padding-top using calc. The image inside the wrapper, is then set to fill the div
+      using object-fit. In this demo it is set to user cover, but you could use a different fill option <i>(fill,
+        contain, cover, none, scale-down)</i>.</p>
+    <p>All images are supplier square to showcase the aspect ratio in effect</p>
+  </div>
+
+  <h2>16/9</h2>
+  <div class="aspectratio" style="--aspect-ratio: 16/9"><img src="https://placehold.co/400?&font=roboto" alt=""></div>
+  <h2>21/9</h2>
+  <div class="aspectratio" style="--aspect-ratio: 21/9"><img src="https://placehold.co/400?&font=roboto" alt=""></div>
+  <h2>4/3</h2>
+  <div class="aspectratio" style="--aspect-ratio: 4/3"><img src="https://placehold.co/400?&font=roboto" alt=""></div>
+  <h2>9/16</h2>
+  <div class="aspectratio" style="--aspect-ratio: 9/16"><img src="https://placehold.co/400?&font=roboto" alt=""></div>
+
+</div>
+
+</body>
+</html>

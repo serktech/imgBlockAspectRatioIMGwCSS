@@ -1,0 +1,56 @@
+//  ---------------
+//  Required CSS
+//  ---------------
+
+
+.aspectratio {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top: calc(100% / (var(--aspect-ratio)));
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+//  ---------------
+//  Only for codepen styling
+//  ---------------
+
+.container {
+  margin: 50px auto;
+  max-width: var(--width);
+}
+
+.intro {
+  margin-bottom: 40px;
+
+  code {
+    background: #011627;
+    color: #ABB6C4;
+    padding: 4px 4px;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+
+  h1 {
+    color: darkcyan;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+  }
+}
+
+h2 {
+  margin-top: 32px;
+}
